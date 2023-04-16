@@ -1,4 +1,5 @@
 function ColorMyPencils(color)
+vim.keymap.set("n", "<C-n>", function() ui.nav_file(3) end)
 	color = color or "dracula"
 	vim.cmd.colorscheme(color)
 
